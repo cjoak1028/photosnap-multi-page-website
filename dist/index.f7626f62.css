@@ -13,6 +13,10 @@ body {
   padding: 0;
 }
 
+ul, ol {
+  list-style: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -50,12 +54,37 @@ a {
   line-height: 1.6rem;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
 .grid-container {
   grid-template-rows: repeat(auto-fill, 6rem);
-  grid-template-columns: repeat(12, minmax(min-content, 6.5rem));
-  justify-content: center;
+  grid-template-columns: auto repeat(12, minmax(min-content, 6.5rem)) auto;
   gap: 1.2rem 3rem;
   display: grid;
+}
+
+.header {
+  height: 7.2rem;
+  background-color: #fff;
+  grid-area: 1 / 1 / 2 / -1;
+}
+
+.header__content {
+  max-width: 111.1rem;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */

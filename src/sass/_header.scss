@@ -1,0 +1,13 @@
+.header {
+    grid-area: 1 / 1 / 2 / -1;
+    height: 7.2rem;
+    background-color: $c-white;
+
+    &__content {
+        max-width: 111.1rem;
+    }
+}
+
+// .logo {
+//     margin-left: 16.5rem;
+// }
