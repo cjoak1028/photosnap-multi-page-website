@@ -3,6 +3,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+}
+
 *, :before, :after {
   box-sizing: inherit;
   margin: 0;
@@ -44,6 +48,14 @@ a {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.6rem;
+}
+
+.grid-container {
+  grid-template-rows: repeat(auto-fill, 6rem);
+  grid-template-columns: repeat(12, minmax(min-content, 6.5rem));
+  justify-content: center;
+  gap: 1.2rem 3rem;
+  display: grid;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */
