@@ -1,0 +1,1 @@
+{"mappings":"ACAA;;;;;AAKA;;;;;;ACLA;;;;AAIA;;;;;;;AAOA;;;;;;;AAOA;;;;;;AAMA;;;;;;AAMA","sources":["src/sass/main.scss","src/sass/_base.scss","src/sass/_typography.scss"],"sourcesContent":["@import './variables';\n@import './base';\n@import './typography';",null,null],"names":[],"version":3,"file":"index.f7626f62.css.map","sourceRoot":"/__parcel_source_root/"}
