@@ -1,11 +1,19 @@
 .btn-block {
-    padding: 1.2rem 2.4rem;
+    text-align: center;
+    width: 15.8rem;
+    padding: 1.2rem 0;
 
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
 
     &--black {
         color: $c-white;
         background-color: $c-black;
+
+        @include respond-below('small') {
+            width: 95%;
+            padding: 1.4rem 0;
+            font-size: 1.5rem;
+        }
 
         &:hover {
             color: $c-black;
@@ -19,6 +27,45 @@
 
         &:hover {
             background-color: $c-grey;
+        }
+    }
+}
+
+.btn-hamburger {
+    position: relative;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+
+    span {
+        position: absolute;
+        width: 100%;
+        height: 0.1rem;
+        background-color: black;
+        left: 0;
+        transform-origin: center;
+        transition: all .2s ease;
+    }
+
+    span:nth-of-type(1n) {
+        top: calc(50% - 0.2rem);
+    }
+
+    span:nth-of-type(2n) {
+        top: calc(50% + 0.2rem);
+    }
+
+    &.open {
+        span {
+            top: 50%;
+        }
+
+        span:nth-of-type(1n) {
+            transform: rotate(45deg);
+        }
+
+        span:nth-of-type(2n) {
+            transform: rotate(-45deg);
         }
     }
 }

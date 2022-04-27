@@ -14,3 +14,16 @@
 .flex-jc-c {
     justify-content: center;
 }
+
+// OTHER UTILITIES
+.hide {
+    display: none;
+}
+
+.show-mobile {
+    display: none;
+
+    @include respond-below('small') {
+        display: block;
+    }
+}

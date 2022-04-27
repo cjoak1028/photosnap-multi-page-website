@@ -75,14 +75,34 @@ a {
   justify-content: center;
 }
 
+.hide, .show-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .show-mobile {
+    display: block;
+  }
+}
+
 .btn-block {
-  padding: 1.2rem 2.4rem;
-  transition: all .2s;
+  text-align: center;
+  width: 15.8rem;
+  padding: 1.2rem 0;
+  transition: color .2s, background-color .2s;
 }
 
 .btn-block--black {
   color: #fff;
   background-color: #000;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .btn-block--black {
+    width: 95%;
+    padding: 1.4rem 0;
+    font-size: 1.5rem;
+  }
 }
 
 .btn-block--black:hover {
@@ -99,8 +119,64 @@ a {
   background-color: #dfdfdf;
 }
 
+.btn-hamburger {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}
+
+.btn-hamburger span {
+  width: 100%;
+  height: .1rem;
+  transform-origin: center;
+  background-color: #000;
+  transition: all .2s;
+  position: absolute;
+  left: 0;
+}
+
+.btn-hamburger span:nth-of-type(n) {
+  top: calc(50% - .2rem);
+}
+
+.btn-hamburger span:nth-of-type(2n) {
+  top: calc(50% + .2rem);
+}
+
+.btn-hamburger.open span {
+  top: 50%;
+}
+
+.btn-hamburger.open span:nth-of-type(n) {
+  transform: rotate(45deg);
+}
+
+.btn-hamburger.open span:nth-of-type(2n) {
+  transform: rotate(-45deg);
+}
+
 .header {
+  height: 7.2rem;
   padding: 1.6rem 4rem;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .header {
+    height: 33.5rem;
+    padding: 0 2.4rem;
+  }
+
+  .header.collapse:not(.show) {
+    height: 7.2rem;
+  }
+
+  .header--mobile {
+    height: 7.2rem;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .header__content {
@@ -108,12 +184,40 @@ a {
   margin: auto;
 }
 
+.header__content hr {
+  width: 95%;
+  opacity: .25;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .header__content {
+    flex-direction: column;
+  }
+}
+
 .nav-header__list {
   gap: 3.7rem;
 }
 
+@media only screen and (max-width: 47.8em) {
+  .nav-header__list {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3.2rem;
+  }
+
+  .nav-header__list li {
+    text-align: center;
+  }
+
+  .nav-header__list a {
+    font-size: 1.5rem;
+  }
+}
+
 .nav-header a {
-  transition: all .2s;
+  transition: color .2s;
 }
 
 .nav-header a:hover {

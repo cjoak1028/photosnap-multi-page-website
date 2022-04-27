@@ -1,11 +1,24 @@
 .nav-header {
-
     &__list {
         gap: 3.7rem;
+
+        @include respond-below('small') {
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 3.2rem;
+
+            li {
+                text-align: center;
+            }
+
+            a {
+                font-size: 1.5rem;
+            }
+        }
     }
 
     a {
-        transition: all 0.2s ease;
+        transition: color 0.2s ease;
 
         &:hover {
             color: $c-grey;

@@ -12,14 +12,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+  <script src="/index.e82f28a0.js" defer=""></script>
+
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__content flex flex-ai-c flex-jc-sb">
-      <img src="/logo.85db5269.svg" alt="photosnap logo">
+  <header class="header collapse">
+    <div class="header__content flex flex-ai-c flex-jc-sb collapse">
+      <div class="header--mobile flex flex-ai-c">
+        <img src="/logo.85db5269.svg" alt="photosnap logo">
+        <div class="btn-hamburger show-mobile">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
       <nav class="nav-header">
         <ul class="nav-header__list flex">
           <li><a>Stories</a></li>
@@ -27,6 +35,7 @@
           <li><a>Pricing</a></li>
         </ul>
       </nav>
+      <hr class="show-mobile">
       <a class="btn-block btn-block--black">Get an invite</a>
     </div>
   </header>
@@ -97,6 +106,6 @@
 
   Copyright 2019. All Rights Reserved -->
 
-<script src="/photosnap-multi-page-website.3464ddca.js"></script></body>
+</body>
 
 </html>
