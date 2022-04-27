@@ -100,7 +100,12 @@ a {
 }
 
 .header {
-  padding: 1.6rem 16.5rem;
+  padding: 1.6rem 4rem;
+}
+
+.header__content {
+  max-width: 111rem;
+  margin: auto;
 }
 
 .nav-header__list {
