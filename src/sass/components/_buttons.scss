@@ -44,7 +44,7 @@
         background-color: black;
         left: 0;
         transform-origin: center;
-        transition: all .2s ease;
+        transition: top .2s ease, transform .2s ease;
     }
 
     span:nth-of-type(1n) {
@@ -58,6 +58,7 @@
     &.open {
         span {
             top: 50%;
+            transition: top .1s ease, transform .2s ease .1s;
         }
 
         span:nth-of-type(1n) {

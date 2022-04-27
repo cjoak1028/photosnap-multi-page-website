@@ -2,18 +2,15 @@
     overflow: hidden;
     padding: 1.6rem 4rem;
     height: 7.2rem;
+    transition: height .3s ease-out .1s;
 
     @include respond-below('small') {
         padding: 0 2.4rem;
-        // ** TEST ** //
         height: 33.5rem;
-        ////////////////
 
-        &.collapse {
-            &:not(.show) {
-              height: 7.2rem;
-            }
-          }
+        &:not(.show-menu) {
+            height: 7.2rem;
+        }
 
         &--mobile {
             height: 7.2rem;
