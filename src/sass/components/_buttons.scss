@@ -1,0 +1,24 @@
+.btn-block {
+    padding: 1.2rem 2.4rem;
+
+    transition: all 0.2s ease;
+
+    &--black {
+        color: $c-white;
+        background-color: $c-black;
+
+        &:hover {
+            color: $c-black;
+            background-color: $c-grey;
+        }
+    }
+
+    &--white {
+        color: $c-black;
+        background-color: $c-white;
+
+        &:hover {
+            background-color: $c-grey;
+        }
+    }
+}

@@ -1,6 +1,11 @@
-@import './variables';
-@import './base';
-@import './typography';
-@import './utilities';
-@import './grid';
-@import './header';
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+
+@import './components/buttons';
+
+@import './layout/grid';
+@import './layout/header';
+@import './layout/navigation';
