@@ -166,12 +166,11 @@ a {
 
 @media only screen and (max-width: 47.8em) {
   .header {
-    height: 33.5rem;
     padding: 0 2.4rem;
   }
 
-  .header:not(.show-menu) {
-    height: 7.2rem;
+  .header.menu-drop {
+    height: 33.5rem;
   }
 
   .header--mobile {

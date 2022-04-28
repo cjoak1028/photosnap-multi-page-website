@@ -6,10 +6,9 @@
 
     @include respond-below('small') {
         padding: 0 2.4rem;
-        height: 33.5rem;
 
-        &:not(.show-menu) {
-            height: 7.2rem;
+        &.menu-drop {
+            height: 33.5rem;
         }
 
         &--mobile {
