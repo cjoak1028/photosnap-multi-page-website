@@ -54,6 +54,12 @@ h1 {
   line-height: 4.8rem;
 }
 
+@media only screen and (max-width: 47.8em) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
 h2 {
   font-size: 2.4rem;
   font-weight: 700;
@@ -283,6 +289,17 @@ a {
   display: flex;
 }
 
+@media only screen and (max-width: 47.8em) {
+  .about__row {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .about__row:nth-child(2) {
+    flex-direction: column;
+  }
+}
+
 .about__row--first .about__col-1 {
   color: #fff;
   background-color: #000;
@@ -292,7 +309,19 @@ a {
   border-left: .6rem solid;
   border-image: linear-gradient(#5a77ff, #bc7198, #ffc593) 1;
   padding-left: 10.6rem;
-  padding-right: 11.2rem;
+}
+
+@media only screen and (max-width: 81.25em) {
+  .about__row--first .about__description {
+    padding-left: 4.8rem;
+  }
+}
+
+@media only screen and (max-width: 47.8em) {
+  .about__row--first .about__description {
+    border-left: none;
+    padding-left: 3.3rem;
+  }
 }
 
 .about__col-1 {
@@ -302,19 +331,43 @@ a {
   display: flex;
 }
 
+@media only screen and (max-width: 47.8em) {
+  .about__col-1 {
+    flex: 1 0 auto;
+  }
+}
+
 .about__col-2 {
   flex: 3 4 auto;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .about__col-2 {
+    flex: 1 0 auto;
+  }
 }
 
 .about__col-2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .about__description {
-  padding-left: 11.2rem;
-  padding-right: 11.2rem;
+  padding: 0 11.2rem;
+}
+
+@media only screen and (max-width: 81.25em) {
+  .about__description {
+    padding: 0 5.4rem;
+  }
+}
+
+@media only screen and (max-width: 47.8em) {
+  .about__description {
+    padding: 7.2rem 3.3rem;
+  }
 }
 
 .about__description h1 {
@@ -322,9 +375,21 @@ a {
   margin-bottom: 2.1rem;
 }
 
+@media only screen and (max-width: 47.8em) {
+  .about__description h1 {
+    margin-bottom: 1.6rem;
+  }
+}
+
 .about__description p {
   opacity: .6;
   margin-bottom: 4.8rem;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .about__description p {
+    margin-bottom: 2.3rem;
+  }
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */
