@@ -20,7 +20,7 @@
     display: none;
 }
 
-.show-mobile {
+.show-for-mobile {
     display: none;
 
     @include respond-below('small') {

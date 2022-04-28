@@ -1,6 +1,7 @@
 html {
   height: 100vh;
   box-sizing: border-box;
+  position: relative;
 }
 
 body {
@@ -11,6 +12,18 @@ body {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+header {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+}
+
+main {
+  z-index: 1;
+  position: absolute;
+  top: 7.2rem;
 }
 
 ul, ol {
@@ -75,12 +88,12 @@ a {
   justify-content: center;
 }
 
-.hide, .show-mobile {
+.hide, .show-for-mobile {
   display: none;
 }
 
 @media only screen and (max-width: 47.8em) {
-  .show-mobile {
+  .show-for-mobile {
     display: block;
   }
 }
@@ -159,6 +172,7 @@ a {
 
 .header {
   height: 7.2rem;
+  background-color: #fff;
   padding: 1.6rem 4rem;
   transition: height .3s ease-out .1s;
   overflow: hidden;
