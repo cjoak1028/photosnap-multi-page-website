@@ -22,6 +22,7 @@ header {
 
 main {
   z-index: 1;
+  width: 100%;
   position: absolute;
   top: 7.2rem;
 }
@@ -74,6 +75,10 @@ a {
 
 .flex {
   display: flex;
+}
+
+.flex-d-c {
+  flex-direction: column;
 }
 
 .flex-ai-c {
@@ -170,6 +175,10 @@ a {
   transform: rotate(-45deg);
 }
 
+.btn-arrow:after {
+  content: url("arrow.61ea1610.svg");
+}
+
 .header {
   height: 7.2rem;
   background-color: #fff;
@@ -195,8 +204,13 @@ a {
 }
 
 .header__content {
-  max-width: 111rem;
   margin: auto;
+}
+
+@media only screen and (min-width: 81.25em) {
+  .header__content {
+    width: 75%;
+  }
 }
 
 .header__content hr {
@@ -241,6 +255,55 @@ a {
 
 .nav-header a:hover {
   color: #dfdfdf;
+}
+
+.about__row {
+  height: 65rem;
+  display: flex;
+}
+
+.about__row--first .about__col-1 {
+  color: #fff;
+  background-color: #000;
+}
+
+.about__row--first .about__description {
+  border-left: .6rem solid;
+  border-image: linear-gradient(#5a77ff, #bc7198, #ffc593) 1;
+  padding-left: 10.6rem;
+  padding-right: 11.2rem;
+}
+
+.about__col-1 {
+  flex: 60rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.about__col-2 {
+  flex: 3 4 auto;
+}
+
+.about__col-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__description {
+  padding-left: 11.2rem;
+  padding-right: 11.2rem;
+}
+
+.about__description h1 {
+  text-transform: uppercase;
+  margin-bottom: 2.1rem;
+}
+
+.about__description p {
+  opacity: .6;
+  margin-bottom: 4.8rem;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */

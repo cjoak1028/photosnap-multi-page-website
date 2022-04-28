@@ -21,7 +21,10 @@
 
     &__content {
         margin: auto;
-        max-width: 111rem;
+
+        @include respond-above('medium') {
+            width: 75%;
+        }
 
         hr {
             width: 95%;

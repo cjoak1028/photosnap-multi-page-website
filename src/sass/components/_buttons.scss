@@ -70,3 +70,9 @@
         }
     }
 }
+
+.btn-arrow {
+    &::after {
+        content: url('../../assets/shared/desktop/arrow.svg');
+    }
+}

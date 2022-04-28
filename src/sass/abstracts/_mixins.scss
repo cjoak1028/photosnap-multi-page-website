@@ -1,7 +1,5 @@
 // BREAKPOINT MANAGER
-$breakpoints: (
-    "small": 47.8em
-) !default;
+$breakpoints: ("small": 47.8em, "medium": 81.25em) !default;
 
 @mixin respond-above($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
