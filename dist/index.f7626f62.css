@@ -175,8 +175,29 @@ a {
   transform: rotate(-45deg);
 }
 
-.btn-arrow:after {
-  content: url("arrow.61ea1610.svg");
+.btn-arrow {
+  flex: 1;
+  display: inline-flex;
+}
+
+.btn-arrow--black:after {
+  content: url("arrow-black.9833ef4e.svg");
+  transition: transform .2s;
+  transform: translateX(1.8rem);
+}
+
+.btn-arrow--white:after {
+  content: url("arrow-white.7573c119.svg");
+  transition: transform .2s;
+  transform: translateX(1.8rem);
+}
+
+.btn-arrow:hover:after {
+  transform: translateX(3rem);
+}
+
+.btn-arrow:hover {
+  text-decoration: underline;
 }
 
 .header {

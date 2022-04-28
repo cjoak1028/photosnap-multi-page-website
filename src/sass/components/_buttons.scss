@@ -72,7 +72,30 @@
 }
 
 .btn-arrow {
-    &::after {
-        content: url('../../assets/shared/desktop/arrow.svg');
+    display: inline-flex;
+    flex: 1;
+
+    &--black {
+        &::after {
+            content: url('../../assets/shared/desktop/arrow-black.svg');
+            transform: translateX(1.8rem);
+            transition: transform .2s ease;
+        }
+    }
+
+    &--white {
+        &::after {
+            content: url('../../assets/shared/desktop/arrow-white.svg');
+            transform: translateX(1.8rem);
+            transition: transform .2s ease;
+        }
+    }
+
+    &:hover::after {
+        transform: translateX(3rem);
+    }
+
+    &:hover {
+        text-decoration: underline;
     }
 }
