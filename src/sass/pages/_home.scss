@@ -14,13 +14,27 @@
 
         &--first {
             .about__col-1 {
+                position: relative;
                 color: $c-white;
                 background-color: $c-black;
+
+                @include respond-below('small') {
+                    &::after {
+                        content: '';
+                        height: 0.6rem;
+                        width: 25%;
+                        margin-left: 3.3rem;
+                        background-image: linear-gradient(192deg, $c-blue-light, $c-pink-desat, $c-orange-light);
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
             }
 
             .about__description {
                 border-left: 0.6rem solid;
-                border-image: linear-gradient($c-blue-light, $c-pink-desat, $c-orange-light) 1;
+                border-image: linear-gradient(180deg, $c-blue-light, $c-pink-desat, $c-orange-light) 1;
                 padding-left: 10.6rem;
 
                 @include respond-below('medium') {

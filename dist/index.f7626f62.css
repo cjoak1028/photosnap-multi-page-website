@@ -303,6 +303,20 @@ a {
 .about__row--first .about__col-1 {
   color: #fff;
   background-color: #000;
+  position: relative;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .about__row--first .about__col-1:after {
+    content: "";
+    height: .6rem;
+    width: 25%;
+    background-image: linear-gradient(192deg, #5a77ff, #bc7198, #ffc593);
+    margin-left: 3.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .about__row--first .about__description {
