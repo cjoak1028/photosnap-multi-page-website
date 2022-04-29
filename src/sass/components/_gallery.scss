@@ -1,0 +1,21 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include respond-below('medium') {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-below('small') {
+        grid-template-columns: 1fr;
+    }
+
+
+    &__item {}
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

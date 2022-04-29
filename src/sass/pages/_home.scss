@@ -1,7 +1,12 @@
 .about {
     &__row {
         display: flex;
-        height: 65rem;
+
+        // height: 60rem;
+
+        // &:nth-child(1) {
+        //     height: 65rem;
+        // }
 
         @include respond-below('small') {
             height: auto;
@@ -67,24 +72,27 @@
         @include respond-below('small') {
             flex: 1 0 auto;
         }
+    }
 
-        img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     &__description {
         padding: 0 11.2rem;
+        margin: 17.3rem 0;
 
         @include respond-below('medium') {
             padding: 0 5.4rem;
+            margin: 17.3rem 0;
         }
 
         @include respond-below('small') {
             padding: 7.2rem 3.3rem;
+            margin: 0;
         }
 
         h1 {
@@ -104,28 +112,5 @@
                 margin-bottom: 2.3rem;
             }
         }
-    }
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    @include respond-below('medium') {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include respond-below('small') {
-        grid-template-columns: 1fr;
-    }
-
-
-    &__item {}
-
-    &__image {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 }
