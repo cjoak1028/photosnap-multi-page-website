@@ -182,7 +182,6 @@ a {
 }
 
 .btn-arrow {
-  flex: 1;
   display: inline-flex;
 }
 
@@ -206,27 +205,69 @@ a {
   text-decoration: underline;
 }
 
+.btn-gallery {
+  justify-content: space-between;
+  display: flex;
+}
+
+.btn-gallery:after {
+  content: url("arrow-white.7573c119.svg");
+}
+
 .gallery {
   grid-template-columns: repeat(4, 1fr);
   display: grid;
 }
 
-@media only screen and (max-width: 81.25em) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 47.8em) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
+.gallery__item {
+  color: #fff;
+  position: relative;
 }
 
 .gallery__image {
+  display: block;
+  position: relative;
+}
+
+.gallery__image:after {
+  content: "";
   width: 100%;
-  height: 100%;
+  height: 70%;
+  background-image: linear-gradient(#0000, #000);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.gallery__image img {
+  width: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.gallery__text {
+  z-index: 100;
+  width: 100%;
+  padding: 4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.gallery__text h3 {
+  margin-bottom: .4rem;
+}
+
+.gallery__text p {
+  font-size: 1.3rem;
+}
+
+.gallery__text hr {
+  color: #dfdfdf;
+  opacity: .25;
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .header {
@@ -404,8 +445,8 @@ a {
 
 @media only screen and (max-width: 47.8em) {
   .about__description {
-    margin: 0;
-    padding: 7.2rem 3.3rem;
+    margin: 7.2rem 0;
+    padding: 0 3.3rem;
   }
 }
 

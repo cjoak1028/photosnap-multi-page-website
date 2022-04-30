@@ -73,7 +73,6 @@
 
 .btn-arrow {
     display: inline-flex;
-    flex: 1;
 
     &--black {
         &::after {
@@ -97,5 +96,14 @@
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+.btn-gallery {
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+        content: url('../../assets/shared/desktop/arrow-white.svg');
     }
 }
