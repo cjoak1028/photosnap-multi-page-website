@@ -1,4 +1,4 @@
-.gallery {
+.story-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
@@ -13,6 +13,27 @@
     &__item {
         position: relative;
         color: white;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0.6rem;
+            width: 100%;
+            background-image: linear-gradient(150deg, $c-blue-light, $c-pink-desat, $c-orange-light);
+            display: none;
+        }
+
+        &:hover {
+            transform: translateY(-2.4rem);
+
+            &::after {
+                display: block;
+            }
+        }
     }
 
     &__image {
