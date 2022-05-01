@@ -5,7 +5,7 @@
     height: 7.2rem;
     transition: height .3s ease-out .1s;
 
-    @include respond-below('small') {
+    @include respond-below('sm') {
         padding: 0 2.4rem;
 
         &.menu-drop {
@@ -22,7 +22,7 @@
     &__content {
         margin: auto;
 
-        @include respond-above('medium') {
+        @include respond-above('lg') {
             width: 75%;
         }
 
@@ -32,7 +32,7 @@
             opacity: 25%;
         }
 
-        @include respond-below('small') {
+        @include respond-below('sm') {
             flex-direction: column;
         }
     }

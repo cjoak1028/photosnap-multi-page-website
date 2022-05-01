@@ -15,7 +15,7 @@ h1 {
     line-height: 4.8rem;
     letter-spacing: 0.417rem;
 
-    @include respond-below('small') {
+    @include respond-below('sm') {
         font-size: 3.2rem;
     }
 }

@@ -2,13 +2,7 @@
     &__row {
         display: flex;
 
-        // height: 60rem;
-
-        // &:nth-child(1) {
-        //     height: 65rem;
-        // }
-
-        @include respond-below('small') {
+        @include respond-below('sm') {
             height: auto;
             flex-direction: column-reverse;
 
@@ -23,7 +17,7 @@
                 color: $c-white;
                 background-color: $c-black;
 
-                @include respond-below('small') {
+                @include respond-below('sm') {
                     &::after {
                         content: '';
                         height: 0.6rem;
@@ -42,11 +36,11 @@
                 border-image: linear-gradient(180deg, $c-blue-light, $c-pink-desat, $c-orange-light) 1;
                 padding-left: 10.6rem;
 
-                @include respond-below('medium') {
+                @include respond-below('lg') {
                     padding-left: 4.8rem;
                 }
 
-                @include respond-below('small') {
+                @include respond-below('sm') {
                     padding-left: 3.3rem;
                     border-left: 0;
                 }
@@ -61,15 +55,16 @@
 
         flex: 1 1 60rem;
 
-        @include respond-below('small') {
+        @include respond-below('sm') {
             flex: 1 0 auto;
         }
     }
 
     &__col-2 {
         flex: 3 4 auto;
+        max-height: 70rem;
 
-        @include respond-below('small') {
+        @include respond-below('sm') {
             flex: 1 0 auto;
         }
     }
@@ -85,13 +80,13 @@
         padding: 0 11.2rem;
         margin: 17.3rem 0;
 
-        @include respond-below('medium') {
+        @include respond-below('lg') {
             padding: 0 5.4rem;
             margin: 17.3rem 0;
         }
 
-        @include respond-below('small') {
-            padding: 0 3.3rem;
+        @include respond-below('sm') {
+            padding: 0 2.4rem;
             margin: 7.2rem 0;
         }
 
@@ -99,7 +94,7 @@
             text-transform: uppercase;
             margin-bottom: 2.1rem;
 
-            @include respond-below('small') {
+            @include respond-below('sm') {
                 margin-bottom: 1.6rem;
             }
         }
@@ -108,7 +103,7 @@
             opacity: 60%;
             margin-bottom: 4.8rem;
 
-            @include respond-below('small') {
+            @include respond-below('sm') {
                 margin-bottom: 2.3rem;
             }
         }

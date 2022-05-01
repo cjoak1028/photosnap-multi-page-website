@@ -219,11 +219,30 @@ a {
   display: grid;
 }
 
+@media only screen and (max-width: 81.25em) {
+  .story-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .story-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .story-gallery__item {
   color: #fff;
   cursor: pointer;
+  height: 50rem;
   transition: transform .2s;
   position: relative;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .story-gallery__item {
+    height: 37.5rem;
+  }
 }
 
 .story-gallery__item:after {
@@ -245,35 +264,69 @@ a {
   display: block;
 }
 
-.story-gallery__image {
-  display: block;
-  position: relative;
+.story-gallery__item--1 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("mountains.c8514a83.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
 }
 
-.story-gallery__image:after {
-  content: "";
-  width: 100%;
-  height: 70%;
-  background-image: linear-gradient(#0000, #000);
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+@media only screen and (max-width: 30em) {
+  .story-gallery__item--1 {
+    background-image: linear-gradient(#0000, #000), url("mountains.5f12d3c7.jpg");
+  }
 }
 
-.story-gallery__image img {
-  width: 100%;
-  object-fit: cover;
-  display: block;
+.story-gallery__item--2 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("cityscapes.5158c439.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+.story-gallery__item--3 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("18-days-voyage.e3472e2a.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+.story-gallery__item--4 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("architecturals.6026b59d.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
 }
 
 .story-gallery__text {
-  z-index: 100;
   width: 100%;
+  z-index: 1;
   padding: 4rem;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+@media only screen and (max-width: 47.8em) {
+  .story-gallery__text {
+    padding: 3.3rem;
+  }
 }
 
 .story-gallery__text h3 {
@@ -436,6 +489,7 @@ a {
 }
 
 .about__col-2 {
+  max-height: 70rem;
   flex: 3 4 auto;
 }
 
@@ -467,7 +521,7 @@ a {
 @media only screen and (max-width: 47.8em) {
   .about__description {
     margin: 7.2rem 0;
-    padding: 0 3.3rem;
+    padding: 0 2.4rem;
   }
 }
 

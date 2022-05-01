@@ -2,19 +2,25 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
-    // @include respond-below('sm-med') {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
+    @include respond-below('lg') {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-    // @include respond-below('x-small') {
-    //     grid-template-columns: 1fr;
-    // }
+    @include respond-below('x-sm') {
+        grid-template-columns: 1fr;
+    }
 
     &__item {
         position: relative;
         color: white;
         cursor: pointer;
         transition: transform 0.2s ease;
+
+        height: 50rem;
+
+        @include respond-below('sm') {
+            height: 37.5rem;
+        }
 
         &::after {
             content: '';
@@ -34,37 +40,43 @@
                 display: block;
             }
         }
-    }
 
-    &__image {
-        display: block;
-        position: relative;
+        &--1 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/mountains.jpg") no-repeat center;
+            background-size: cover;
 
-        &::after {
-            content: '';
-            display: block;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 70%;
-            background-image: linear-gradient(to bottom, transparent, $c-black);
-            position: absolute;
+            @include respond-below('x-sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/mountains.jpg")
+            }
         }
 
-        img {
-            display: block;
-            width: 100%;
-            object-fit: cover;
+        &--2 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/cityscapes.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--3 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/18-days-voyage.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &--4 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/architecturals.jpg") no-repeat center;
+            background-size: cover;
         }
     }
 
     &__text {
         position: absolute;
-        z-index: 100;
         width: 100%;
         left: 0;
         bottom: 0;
         padding: 4rem;
+        z-index: 1;
+
+        @include respond-below('sm') {
+            padding: 3.3rem;
+        }
 
         h3 {
             margin-bottom: .4rem;

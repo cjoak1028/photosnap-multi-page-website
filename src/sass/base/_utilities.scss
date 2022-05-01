@@ -27,7 +27,7 @@
 .show-for-mobile {
     display: none;
 
-    @include respond-below('small') {
+    @include respond-below('sm') {
         display: block;
     }
 }

@@ -4,7 +4,7 @@
             margin-right: 3.7rem;
         }
 
-        @include respond-below('small') {
+        @include respond-below('sm') {
             flex-direction: column;
             margin-top: 3.2rem;
 
