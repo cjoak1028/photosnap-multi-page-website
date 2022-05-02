@@ -31,3 +31,22 @@
         }
     }
 }
+
+.nav-footer {
+    height: 100%;
+
+    &__list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    a {
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 30%;
+        }
+    }
+}

@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    height: 100%;
+    min-height: 100%;
 }
 
 *,
@@ -22,7 +22,7 @@ header {
     z-index: 2;
 }
 
-main {
+.page-container {
     position: absolute;
     top: 7.2rem;
     z-index: 1;

@@ -62,7 +62,6 @@
 
     &__col-2 {
         flex: 3 4 auto;
-        max-height: 70rem;
 
         @include respond-below('sm') {
             flex: 1 0 auto;
