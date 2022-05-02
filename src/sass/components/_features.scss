@@ -3,18 +3,17 @@
     column-gap: 3rem;
     row-gap: 8rem;
     margin: auto;
-
-    width: 77%;
+    width: 80%;
 
     &--home-page {
         grid-template-columns: repeat(3, 1fr);
+        padding: 12rem 0;
 
         @include respond-below('md') {
             grid-template-columns: 1fr;
             max-width: 50rem;
+            padding: 8rem 0;
         }
-
-        padding: 12rem 0;
     }
 
     &--features-page {}
