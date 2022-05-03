@@ -11,7 +11,7 @@
         width: 80%;
         margin: auto;
 
-        @include respond-below('sm') {
+        @include respond-below('med') {
             grid-template-columns: 1fr;
             grid-template-rows: auto;
         }
@@ -23,7 +23,7 @@
         p {
             opacity: 50.25%;
 
-            @include respond-below('sm') {
+            @include respond-below('med') {
                 text-align: center;
             }
         }
@@ -39,7 +39,7 @@
             justify-content: space-between;
             width: 15.3rem;
 
-            @include respond-below('sm') {
+            @include respond-below('med') {
                 margin-bottom: 4.9rem;
             }
 
@@ -54,7 +54,7 @@
         &--1 {
             grid-column: 1 / span 1;
 
-            @include respond-below('sm') {
+            @include respond-below('med') {
                 justify-self: center;
             }
         }
@@ -63,7 +63,7 @@
             grid-column: 1 / span 1;
             grid-row: 3 / span 1;
 
-            @include respond-below('sm') {
+            @include respond-below('med') {
                 grid-column: 1 / span 1;
                 grid-row: auto;
                 justify-self: center;
@@ -74,12 +74,12 @@
             grid-column: 2 / span 1;
             grid-row: 1 / span 3;
 
-            @include respond-below('md') {
+            @include respond-below('lg') {
                 grid-column: 1 / span 1;
                 grid-row: 2 / span 1;
             }
 
-            @include respond-below('sm') {
+            @include respond-below('med') {
                 grid-column: 1 / span 1;
                 grid-row: auto;
                 justify-self: center;
@@ -91,7 +91,7 @@
             grid-row: 1 / span 1;
             justify-self: end;
 
-            @include respond-below('sm') {
+            @include respond-below('med') {
                 grid-column: 1 / span 1;
                 grid-row: auto;
                 justify-self: center;
@@ -104,7 +104,7 @@
             grid-row: 3 / span 1;
             justify-self: end;
 
-            @include respond-below('sm') {
+            @include respond-below('med') {
                 grid-column: 1 / span 1;
                 grid-row: auto;
                 justify-self: center;

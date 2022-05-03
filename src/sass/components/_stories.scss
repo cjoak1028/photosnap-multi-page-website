@@ -1,4 +1,4 @@
-.story-gallery {
+.stories {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
@@ -6,11 +6,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @include respond-below('x-sm') {
+    @include respond-below('sm') {
         grid-template-columns: 1fr;
     }
 
-    &__item {
+    .story {
         position: relative;
         color: white;
         cursor: pointer;
@@ -18,10 +18,19 @@
 
         height: 50rem;
 
-        @include respond-below('sm') {
+        @include respond-below('med') {
             height: 37.5rem;
         }
 
+        @include respond-below('sm') {
+            height: 50rem;
+        }
+
+        @include respond-below('x-sm') {
+            height: 37.5rem;
+        }
+
+        // STORY HOVER
         &::after {
             content: '';
             position: absolute;
@@ -41,11 +50,41 @@
             }
         }
 
+        // STORY TEXT
+        &__text {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            padding: 4rem;
+            z-index: 1;
+
+            @include respond-below('med') {
+                padding: 3.3rem;
+            }
+
+            h3 {
+                margin-bottom: .4rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            hr {
+                color: $c-grey;
+                opacity: 25%;
+                margin-top: 1.6rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        // STORY BACKGROUND IMAGES
         &--1 {
             background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/mountains.jpg") no-repeat center;
             background-size: cover;
 
-            @include respond-below('x-sm') {
+            @include respond-below('sm') {
                 background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/mountains.jpg")
             }
         }
@@ -53,44 +92,28 @@
         &--2 {
             background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/cityscapes.jpg") no-repeat center;
             background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/cityscapes.jpg")
+            }
         }
 
         &--3 {
             background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/18-days-voyage.jpg") no-repeat center;
             background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/18-days-voyage.jpg")
+            }
         }
 
         &--4 {
             background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/architecturals.jpg") no-repeat center;
             background-size: cover;
-        }
-    }
 
-    &__text {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        padding: 4rem;
-        z-index: 1;
-
-        @include respond-below('sm') {
-            padding: 3.3rem;
-        }
-
-        h3 {
-            margin-bottom: .4rem;
-        }
-
-        p {
-            font-size: 1.3rem;
-        }
-
-        hr {
-            color: $c-grey;
-            opacity: 25%;
-            margin-top: 1.6rem;
-            margin-bottom: 2rem;
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/architecturals.jpg")
+            }
         }
     }
 }
