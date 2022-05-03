@@ -8,34 +8,32 @@
     padding: 16rem 0;
     grid-template-columns: repeat(3, 1fr);
 
-    @include respond-below('med') {
-        grid-template-columns: repeat(1, 1fr);
-        max-width: 50rem;
+    @include respond-below('lg') {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 11.2rem 0;
+        row-gap: 7.2rem;
     }
 
-    &:not(.features--home) {
+    @include respond-below('sm') {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 6.4rem 0;
+        row-gap: 5.6em;
+        max-width: 41.5rem;
+    }
+
+    &--home {
+        padding: 12rem 0;
+
         @include respond-below('lg') {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
 
         @include respond-below('med') {
+            padding: 8rem 0;
             grid-template-columns: repeat(1, 1fr);
-            max-width: 50rem;
+            max-width: 41.5rem;
         }
     }
-
-    // &--home {
-    //     grid-template-columns: repeat(3, 1fr);
-    //     padding: 12rem 0;
-
-    //     @include respond-below('lg') {
-    //         grid-template-columns: 1fr;
-    //         max-width: 50rem;
-    //         padding: 8rem 0;
-    //     }
-    // }
-
-    &--features-page {}
 
     .feature {
         display: flex;

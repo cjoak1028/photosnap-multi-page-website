@@ -223,23 +223,38 @@ a {
   display: grid;
 }
 
-@media only screen and (max-width: 52.4em) {
+@media only screen and (max-width: 66.9em) {
   .features {
-    max-width: 50rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 7.2rem;
+    padding: 11.2rem 0;
   }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .features {
+    max-width: 41.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5.6em;
+    padding: 6.4rem 0;
+  }
+}
+
+.features--home {
+  padding: 12rem 0;
 }
 
 @media only screen and (max-width: 66.9em) {
-  .features:not(.features--home) {
-    grid-template-columns: repeat(2, 1fr);
+  .features--home {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (max-width: 52.4em) {
-  .features:not(.features--home) {
-    max-width: 50rem;
+  .features--home {
+    max-width: 41.5rem;
     grid-template-columns: repeat(1, 1fr);
+    padding: 8rem 0;
   }
 }
 
