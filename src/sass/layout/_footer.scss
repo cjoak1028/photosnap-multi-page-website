@@ -5,43 +5,25 @@
     &__content {
         color: white;
         display: grid;
-        column-gap: 10rem;
-        grid-template-columns: 1fr minmax(min-content, 3fr) minmax(max-content, 1fr);
-        grid-template-rows: min-content 9rem min-content;
+        grid-template-columns: minmax(max-content, 1fr) minmax(min-content, 3fr) minmax(max-content, 1fr);
+        grid-template-rows: 5rem 9rem min-content;
         width: 80%;
         margin: auto;
 
         @include respond-below('med') {
             grid-template-columns: 1fr;
-            grid-template-rows: auto;
-        }
-
-        @include respond-below('md') {
-            column-gap: 0;
+            grid-template-rows: repeat(5, min-content);
         }
 
         p {
             opacity: 50.25%;
-
-            @include respond-below('med') {
-                text-align: center;
-            }
-        }
-
-        .logo-container {
-            img {
-                margin-bottom: 3.2rem;
-            }
+            text-align: center;
         }
 
         .logos-container {
             display: flex;
             justify-content: space-between;
             width: 15.3rem;
-
-            @include respond-below('med') {
-                margin-bottom: 4.9rem;
-            }
 
             img {
                 width: 2rem;
@@ -52,37 +34,23 @@
 
     &__item {
         &--1 {
-            grid-column: 1 / span 1;
-
-            @include respond-below('med') {
-                justify-self: center;
-            }
+            grid-column: 1;
         }
 
         &--2 {
             grid-column: 1 / span 1;
             grid-row: 3 / span 1;
-
-            @include respond-below('med') {
-                grid-column: 1 / span 1;
-                grid-row: auto;
-                justify-self: center;
-            }
         }
 
         &--3 {
             grid-column: 2 / span 1;
             grid-row: 1 / span 3;
+            margin-left: 10rem;
 
             @include respond-below('lg') {
                 grid-column: 1 / span 1;
                 grid-row: 2 / span 1;
-            }
-
-            @include respond-below('med') {
-                grid-column: 1 / span 1;
-                grid-row: auto;
-                justify-self: center;
+                margin-left: 0;
             }
         }
 
@@ -90,24 +58,33 @@
             grid-column: 3 / span 1;
             grid-row: 1 / span 1;
             justify-self: end;
-
-            @include respond-below('med') {
-                grid-column: 1 / span 1;
-                grid-row: auto;
-                justify-self: center;
-                margin-bottom: 3.4rem;
-            }
         }
 
         &--5 {
             grid-column: 3 / span 1;
             grid-row: 3 / span 1;
             justify-self: end;
+        }
 
-            @include respond-below('med') {
-                grid-column: 1 / span 1;
-                grid-row: auto;
-                justify-self: center;
+        @include respond-below('med') {
+            grid-column: auto;
+            grid-row: auto;
+            justify-self: center;
+
+            &--1 {
+                height: 4.8rem;
+            }
+
+            &--2 {
+                height: 6.9rem;
+            }
+
+            &--3 {
+                height: 24rem;
+            }
+
+            &--4 {
+                height: 5rem;
             }
         }
     }
