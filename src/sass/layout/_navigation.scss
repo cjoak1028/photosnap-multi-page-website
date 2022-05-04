@@ -1,10 +1,10 @@
 .nav-header {
     &__list {
         li:not(:last-child) {
-            margin-right: 3.7rem;
+            margin-right: 2.5rem;
         }
 
-        @include respond-below('med') {
+        @include respond-below('sm-med') {
             flex-direction: column;
             margin-top: 3.2rem;
 

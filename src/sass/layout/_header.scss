@@ -5,7 +5,7 @@
     height: 7.2rem;
     transition: height .3s ease-out .1s;
 
-    @include respond-below('med') {
+    @include respond-below('sm-med') {
         padding: 0 2.4rem;
 
         &.menu-drop {
@@ -32,7 +32,7 @@
             opacity: 25%;
         }
 
-        @include respond-below('med') {
+        @include respond-below('sm-med') {
             flex-direction: column;
         }
     }

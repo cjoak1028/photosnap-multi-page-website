@@ -9,7 +9,7 @@
         color: $c-white;
         background-color: $c-black;
 
-        @include respond-below('sm') {
+        @include respond-below('sm-med') {
             width: 95%;
             padding: 1.4rem 0;
             font-size: 1.5rem;
