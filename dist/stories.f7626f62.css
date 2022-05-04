@@ -66,6 +66,13 @@ h3 {
   line-height: 2.5rem;
 }
 
+h4 {
+  letter-spacing: .02rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
 a {
   letter-spacing: .2rem;
   font-size: 1.2rem;
@@ -197,13 +204,13 @@ a {
 
 .banner__text {
   margin: 17.3rem 0;
-  padding: 0 11.2rem;
+  padding-left: 11.2rem;
 }
 
 @media only screen and (max-width: 81.3em) {
   .banner__text {
     margin: 17.3rem 0;
-    padding: 0 5.4rem;
+    padding-left: 5.4rem;
   }
 }
 
@@ -231,13 +238,13 @@ a {
   }
 }
 
-.banner__text p {
-  opacity: .6;
+.banner__text .description {
+  opacity: .75;
   margin-bottom: 4.8rem;
 }
 
 @media only screen and (max-width: 52.4em) {
-  .banner__text p {
+  .banner__text .description {
     margin-bottom: 2.3rem;
   }
 }
@@ -939,13 +946,27 @@ a {
   background-clip: border-box, border-box;
 }
 
+@media only screen and (max-width: 59.7em) {
+  .stories .banner {
+    background-image: url("moon-of-appalacia.dbfec4ba.jpg");
+  }
+}
+
 @media only screen and (max-width: 45.2em) {
   .stories .banner {
     background: #000;
   }
 }
 
-.stories .banner__text:before, .stories .banner__left:after, .stories .banner__right img {
+.stories .banner__left:after {
+  display: none !important;
+}
+
+.stories .banner__right {
+  width: 100%;
+}
+
+.stories .banner__right img {
   display: none;
 }
 
@@ -955,4 +976,34 @@ a {
   }
 }
 
-/*# sourceMappingURL=index.f7626f62.css.map */
+.stories .banner__text {
+  margin: 12.2rem 0;
+}
+
+@media only screen and (max-width: 45.2em) {
+  .stories .banner__text {
+    margin: 4.8rem 0;
+  }
+}
+
+.stories .banner__text :not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.stories .banner__text h4 {
+  text-transform: uppercase;
+}
+
+.stories .banner__text h1 {
+  margin-bottom: 1.6rem !important;
+}
+
+.stories .banner__text .date {
+  opacity: .75;
+}
+
+.stories .banner__text:before {
+  display: none !important;
+}
+
+/*# sourceMappingURL=stories.f7626f62.css.map */

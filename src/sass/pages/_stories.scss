@@ -1,0 +1,58 @@
+.stories {
+    .banner {
+        background: $c-black, url(../../assets/stories/desktop/moon-of-appalacia.jpg) no-repeat center;
+        background-size: cover;
+
+        @include respond-below('med-lg') {
+            background-image: url(../../assets/stories/tablet/moon-of-appalacia.jpg);
+        }
+
+        @include respond-below('sm-med') {
+            background: $c-black;
+        }
+
+        &__left::after {
+            display: none !important;
+        }
+
+        &__right {
+            width: 100%;
+
+            img {
+                display: none;
+
+                @include respond-below('sm-med') {
+                    display: block;
+                }
+            }
+        }
+
+        &__text {
+            margin: 12.2rem 0;
+
+            @include respond-below('sm-med') {
+                margin: 4.8rem 0;
+            }
+
+            *:not(:last-child) {
+                margin-bottom: 2.4rem;
+            }
+
+            h4 {
+                text-transform: uppercase;
+            }
+
+            h1 {
+                margin-bottom: 1.6rem !important;
+            }
+
+            .date {
+                opacity: 0.75;
+            }
+
+            &::before {
+                display: none !important;
+            }
+        }
+    }
+}
