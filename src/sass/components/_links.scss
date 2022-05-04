@@ -1,0 +1,33 @@
+.link {
+    display: inline-flex;
+
+    &::after {
+        margin-left: 1.8rem;
+        transition: transform .2s ease;
+    }
+
+    &--gallery {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--black {
+        &::after {
+            content: url('../../assets/shared/desktop/arrow-black.svg');
+        }
+    }
+
+    &--white {
+        &::after {
+            content: url('../../assets/shared/desktop/arrow-white.svg');
+        }
+    }
+
+    &:hover::after {
+        transform: translateX(1rem);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

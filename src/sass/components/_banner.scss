@@ -15,13 +15,13 @@
             @include respond-below('sm-med') {
                 &::after {
                     content: '';
+                    position: absolute;
                     height: 0.6rem;
                     width: 25%;
                     margin-left: 3.3rem;
                     background-image: linear-gradient(192deg, $c-blue-light, $c-pink-desat, $c-orange-light);
                     top: 0;
                     left: 0;
-                    position: absolute;
                 }
             }
 
