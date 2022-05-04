@@ -514,7 +514,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"dV6cC":[function(require,module,exports) {
-const hamburgerButton = document.querySelector('.btn-hamburger');
+const hamburgerButton = document.querySelector('.hamburger-btn');
 const header = document.querySelector('.header');
 // Check whether browser is Safari or not
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);

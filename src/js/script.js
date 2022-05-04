@@ -1,4 +1,4 @@
-const hamburgerButton = document.querySelector('.btn-hamburger');
+const hamburgerButton = document.querySelector('.hamburger-btn');
 const header = document.querySelector('.header');
 
 // Check whether browser is Safari or not

@@ -6,11 +6,6 @@
         transition: transform .2s ease;
     }
 
-    &--gallery {
-        display: flex;
-        justify-content: space-between;
-    }
-
     &--black {
         &::after {
             content: url('../../assets/shared/desktop/arrow-black.svg');
@@ -30,4 +25,9 @@
     &:hover {
         text-decoration: underline;
     }
+}
+
+.story-link {
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,19 +1,23 @@
-.btn-block {
+.btn {
     text-align: center;
-    width: 15.8rem;
+    width: 100%;
     padding: 1.2rem 0;
 
     transition: color 0.2s ease, background-color 0.2s ease;
 
-    &--black {
-        color: $c-white;
-        background-color: $c-black;
+    &--header {
+        width: 15.8rem;
 
         @include respond-below('sm-med') {
             width: 95%;
             padding: 1.4rem 0;
             font-size: 1.5rem;
         }
+    }
+
+    &--black {
+        color: $c-white;
+        background-color: $c-black;
 
         &:hover {
             color: $c-black;
@@ -31,7 +35,7 @@
     }
 }
 
-.btn-hamburger {
+.hamburger-btn {
     position: relative;
     cursor: pointer;
     width: 2rem;
