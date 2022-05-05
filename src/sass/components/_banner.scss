@@ -54,7 +54,7 @@
     }
 
     &__left {
-        flex: 1 1 60rem;
+        flex: 1 1 55rem;
 
         @include respond-below('sm-med') {
             flex: auto;
@@ -81,11 +81,11 @@
     }
 
     &__text {
-        padding-left: 11.2rem;
+        padding: 0 11.2rem;
         margin: 17.3rem 0;
 
         @include respond-below('x-lg') {
-            padding-left: 5.4rem;
+            padding: 0 5.4rem;
             margin: 17.3rem 0;
         }
 

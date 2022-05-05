@@ -1,4 +1,4 @@
-.stories {
+.stories-page {
     .banner {
         background: $c-black, url(../../assets/stories/desktop/moon-of-appalacia.jpg) no-repeat center;
         background-size: cover;
@@ -29,6 +29,7 @@
 
         &__text {
             margin: 12.2rem 0;
+            padding-right: 0;
 
             @include respond-below('sm-med') {
                 margin: 4.8rem 0;

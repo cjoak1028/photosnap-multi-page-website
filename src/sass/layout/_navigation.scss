@@ -1,9 +1,8 @@
 .nav-header {
-    &__list {
-        li:not(:last-child) {
-            margin-right: 2.5rem;
-        }
+    width: 20%;
+    min-width: 24rem;
 
+    &__list {
         @include respond-below('sm-med') {
             flex-direction: column;
             margin-top: 3.2rem;
