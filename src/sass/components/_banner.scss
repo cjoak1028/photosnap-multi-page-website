@@ -1,5 +1,6 @@
 .banner {
     display: flex;
+    // max-height: 60rem;
 
     @include respond-below('sm-med') {
         flex-direction: column-reverse;
@@ -119,10 +120,19 @@
 }
 
 .cta-banner {
-
-    background: $c-black, url('../../assets/shared/desktop/bg-beta.jpg') no-repeat center;
+    background: $c-black, url('../../assets/shared/desktop/bg-beta.jpg') center;
     background-size: cover;
     color: white;
+
+    @include respond-below('med-lg') {
+        background: $c-black, url('../../assets/shared/tablet/bg-beta.jpg') center;
+        background-size: cover;
+    }
+
+    @include respond-below('sm') {
+        background: $c-black, url('../../assets/shared/mobile/bg-beta.jpg') center;
+        background-size: cover;
+    }
 
     padding: 6.8rem 0;
     min-height: 28rem;

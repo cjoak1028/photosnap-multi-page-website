@@ -255,13 +255,39 @@ a {
   background-color: #0000;
   background-image: none, url("bg-beta.7f1a6736.jpg");
   background-position: 0 0, center;
-  background-repeat: repeat, no-repeat;
+  background-repeat: repeat, repeat;
   background-size: cover;
   background-attachment: scroll, scroll;
   background-origin: padding-box, padding-box;
   background-clip: border-box, border-box;
   padding: 6.8rem 0;
   position: relative;
+}
+
+@media only screen and (max-width: 59.7em) {
+  .cta-banner {
+    background-color: #0000;
+    background-image: none, url("bg-beta.af09cb01.jpg");
+    background-position: 0 0, center;
+    background-repeat: repeat, repeat;
+    background-size: cover;
+    background-attachment: scroll, scroll;
+    background-origin: padding-box, padding-box;
+    background-clip: border-box, border-box;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .cta-banner {
+    background-color: #0000;
+    background-image: none, url("bg-beta.ea56faa9.jpg");
+    background-position: 0 0, center;
+    background-repeat: repeat, repeat;
+    background-size: cover;
+    background-attachment: scroll, scroll;
+    background-origin: padding-box, padding-box;
+    background-clip: border-box, border-box;
+  }
 }
 
 .cta-banner:before {
