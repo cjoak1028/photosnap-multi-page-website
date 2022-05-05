@@ -1,9 +1,13 @@
 .header {
     background-color: $c-white;
     overflow: hidden;
-    padding: 1.6rem 4rem;
+    padding: 1.6rem 5.4rem;
     height: 7.2rem;
     transition: height .3s ease-out .1s;
+
+    @include respond-above('x-lg') {
+        padding: 1.6rem 11.2rem;
+    }
 
     @include respond-below('sm-med') {
         padding: 0 2.4rem;
@@ -21,10 +25,6 @@
 
     &__content {
         margin: auto;
-
-        @include respond-above('x-lg') {
-            width: 75%;
-        }
 
         hr {
             width: 95%;

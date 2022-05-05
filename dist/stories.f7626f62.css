@@ -887,9 +887,15 @@ a {
 .header {
   height: 7.2rem;
   background-color: #fff;
-  padding: 1.6rem 4rem;
+  padding: 1.6rem 5.4rem;
   transition: height .3s ease-out .1s;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 81.3em) {
+  .header {
+    padding: 1.6rem 11.2rem;
+  }
 }
 
 @media only screen and (max-width: 45.2em) {
@@ -910,12 +916,6 @@ a {
 
 .header__content {
   margin: auto;
-}
-
-@media only screen and (min-width: 81.3em) {
-  .header__content {
-    width: 75%;
-  }
 }
 
 .header__content hr {
