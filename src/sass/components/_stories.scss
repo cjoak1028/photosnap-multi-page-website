@@ -77,6 +77,10 @@
                 margin-top: 1.6rem;
                 margin-bottom: 2rem;
             }
+
+            .date {
+                margin-bottom: 0.4rem;
+            }
         }
 
         // STORY BACKGROUND IMAGES
@@ -113,6 +117,114 @@
 
             @include respond-below('sm') {
                 background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/architecturals.jpg")
+            }
+        }
+
+        &--5 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/world-tour.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/world-tour.jpg")
+            }
+        }
+
+        &--6 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/unforeseen-corners.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/unforeseen-corners.jpg")
+            }
+        }
+
+        &--7 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/king-on-africa.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/king-on-africa.jpg")
+            }
+        }
+
+        &--8 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/trip-to-nowhere.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/trip-to-nowhere.jpg")
+            }
+        }
+
+        &--9 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/rage-of-the-sea.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/rage-of-the-sea.jpg")
+            }
+        }
+
+        &--10 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/running-free.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/running-free.jpg")
+            }
+        }
+
+        &--11 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/behind-the-waves.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/behind-the-waves.jpg")
+            }
+        }
+
+        &--12 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/calm-waters.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/calm-waters.jpg")
+            }
+        }
+
+        &--13 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/milky-way.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/milky-way.jpg")
+            }
+        }
+
+        &--14 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/dark-forest.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/dark-forest.jpg")
+            }
+        }
+
+        &--15 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/somwarpet.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/somwarpet.jpg")
+            }
+        }
+
+        &--16 {
+            background: black linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/desktop/land-of-dreams.jpg") no-repeat center;
+            background-size: cover;
+
+            @include respond-below('sm') {
+                background-image: linear-gradient(to bottom, transparent, $c-black), url("../../assets/stories/mobile/land-of-dreams.jpg")
             }
         }
     }

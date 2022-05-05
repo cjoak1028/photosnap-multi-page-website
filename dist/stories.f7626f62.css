@@ -518,6 +518,10 @@ a {
   margin-bottom: 2rem;
 }
 
+.stories .story__text .date {
+  margin-bottom: .4rem;
+}
+
 .stories .story--1 {
   background-color: #0000;
   background-image: linear-gradient(#0000, #000), url("mountains.c8514a83.jpg");
@@ -583,6 +587,210 @@ a {
 @media only screen and (max-width: 37.9em) {
   .stories .story--4 {
     background-image: linear-gradient(#0000, #000), url("architecturals.c8bb26ba.jpg");
+  }
+}
+
+.stories .story--5 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("world-tour.55efe506.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--5 {
+    background-image: linear-gradient(#0000, #000), url("world-tour.7e083c3a.jpg");
+  }
+}
+
+.stories .story--6 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("unforeseen-corners.e1061bf3.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--6 {
+    background-image: linear-gradient(#0000, #000), url("unforeseen-corners.48dcdc49.jpg");
+  }
+}
+
+.stories .story--7 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("king-on-africa.725a2b2f.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--7 {
+    background-image: linear-gradient(#0000, #000), url("king-on-africa.68e7ec55.jpg");
+  }
+}
+
+.stories .story--8 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("trip-to-nowhere.956bc11a.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--8 {
+    background-image: linear-gradient(#0000, #000), url("trip-to-nowhere.2da1c4d4.jpg");
+  }
+}
+
+.stories .story--9 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("rage-of-the-sea.5acdad31.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--9 {
+    background-image: linear-gradient(#0000, #000), url("rage-of-the-sea.9598df08.jpg");
+  }
+}
+
+.stories .story--10 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("running-free.565a7116.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--10 {
+    background-image: linear-gradient(#0000, #000), url("running-free.ae0776a5.jpg");
+  }
+}
+
+.stories .story--11 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("behind-the-waves.4a35698a.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--11 {
+    background-image: linear-gradient(#0000, #000), url("behind-the-waves.e6bc399d.jpg");
+  }
+}
+
+.stories .story--12 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("calm-waters.6242b015.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--12 {
+    background-image: linear-gradient(#0000, #000), url("calm-waters.6cfc7225.jpg");
+  }
+}
+
+.stories .story--13 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("milky-way.45046f08.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--13 {
+    background-image: linear-gradient(#0000, #000), url("milky-way.7d87c361.jpg");
+  }
+}
+
+.stories .story--14 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("dark-forest.924af687.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--14 {
+    background-image: linear-gradient(#0000, #000), url("dark-forest.2cdb61bf.jpg");
+  }
+}
+
+.stories .story--15 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("somwarpet.50f8a108.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--15 {
+    background-image: linear-gradient(#0000, #000), url("somwarpet.9aabac32.jpg");
+  }
+}
+
+.stories .story--16 {
+  background-color: #0000;
+  background-image: linear-gradient(#0000, #000), url("land-of-dreams.2aa02779.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .stories .story--16 {
+    background-image: linear-gradient(#0000, #000), url("land-of-dreams.cc1bb39c.jpg");
   }
 }
 
