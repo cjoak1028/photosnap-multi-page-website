@@ -117,3 +117,50 @@
         }
     }
 }
+
+.cta-banner {
+
+    background: $c-black, url('../../assets/shared/desktop/bg-beta.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+
+    padding: 6.8rem 0;
+    min-height: 28rem;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 0.6rem;
+        background-image: linear-gradient(180deg, $c-blue-light, $c-pink-desat, $c-orange-light);
+        left: 0;
+        top: 0;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 80%;
+        margin: auto;
+
+        @include respond-below('med') {
+            flex-direction: column;
+            align-items: start;
+            // width: 50%;
+        }
+    }
+
+    h1 {
+        text-transform: uppercase;
+        max-width: 40rem;
+
+        @include respond-below('med') {
+            margin-bottom: 2.4rem;
+        }
+    }
+}
