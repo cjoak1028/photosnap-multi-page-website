@@ -1226,6 +1226,46 @@ a {
   }
 }
 
+.pricing {
+  padding: 12rem 16.5rem;
+}
+
+.plans {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.plans .plan {
+  width: 31.5%;
+  height: 40.7rem;
+  background-color: #dfdfdf;
+  align-items: center;
+  padding: 0 4rem;
+  display: flex;
+}
+
+.plans .plan--main {
+  color: #fff;
+  height: 47rem;
+  background-color: #000;
+}
+
+.plans .plan__content {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.plans .plan__content * {
+  text-align: center;
+}
+
+.plans .plan__content h2 {
+  margin-bottom: 1.8rem;
+}
+
 .stories-page .banner {
   background-color: #0000;
   background-image: none, url("moon-of-appalacia.980c7ae9.jpg");

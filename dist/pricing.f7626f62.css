@@ -110,6 +110,10 @@ a {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 .banner {
   display: flex;
 }
@@ -329,6 +333,7 @@ a {
 
 .btn {
   text-align: center;
+  height: 4rem;
   width: 100%;
   padding: 1.2rem 0;
   transition: color .2s, background-color .2s;
@@ -1223,6 +1228,154 @@ a {
 @media only screen and (max-width: 52.4em) {
   .about__description p {
     margin-bottom: 2.3rem;
+  }
+}
+
+.plans {
+  width: 77%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12rem auto;
+  display: flex;
+}
+
+@media only screen and (max-width: 81.3em) {
+  .plans {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plans {
+    width: 77%;
+    flex-direction: column;
+    margin: 6.4rem auto;
+  }
+}
+
+@media only screen and (max-width: 59.7em) {
+  .plans {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+.plan {
+  text-align: center;
+  height: 40.7rem;
+  width: 31.5%;
+  background-color: #f5f5f5;
+  grid-template-columns: 39% min-content;
+  place-content: space-between;
+  padding: 5.6rem 4rem 4rem;
+  display: grid;
+}
+
+.plan * {
+  grid-column: 1 / span 2;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plan {
+    width: 100%;
+    height: 27rem;
+    padding: 4rem;
+  }
+
+  .plan:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .plan__description {
+    text-align: left;
+    grid-column: 1 / span 1;
+  }
+
+  .plan__rate {
+    text-align: right;
+    grid-column: 2 / span 1;
+  }
+
+  .plan a {
+    grid-column: 1 / span 1;
+  }
+}
+
+@media only screen and (max-width: 59.7em) {
+  .plan {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .plan {
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 23.4em) {
+  .plan {
+    height: 47rem;
+    padding: 4rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 45.2em) {
+  .plan {
+    grid-template-columns: 45% min-content;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .plan * {
+    text-align: center;
+    grid-column: 1 / span 2;
+  }
+
+  .plan a {
+    grid-column: 1 / span 2;
+  }
+}
+
+.plan__description h2 {
+  margin-bottom: 1.8rem;
+}
+
+.plan__description p {
+  opacity: .6;
+}
+
+.plan--pro {
+  color: #fff;
+  height: 47rem;
+  background-color: #000;
+  padding-top: 8.8rem;
+  padding-bottom: 7.1rem;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plan--pro {
+    height: 27rem;
+    padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 59.7em) {
+  .plan--pro {
+    height: 30rem;
+    padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .plan--pro {
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 23.4em) {
+  .plan--pro {
+    height: 47rem;
   }
 }
 

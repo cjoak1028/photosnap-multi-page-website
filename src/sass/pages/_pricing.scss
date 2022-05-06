@@ -1,0 +1,128 @@
+.plans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12rem auto;
+    width: 77%;
+
+    @include respond-below('x-lg') {
+        width: 90%;
+    }
+
+    @include respond-below('lg') {
+        flex-direction: column;
+        margin: 6.4rem auto;
+        width: 77%;
+    }
+
+    @include respond-below('med-lg') {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+.plan {
+    background-color: #F5F5F5;
+    text-align: center;
+    height: 40.7rem;
+    padding: 4rem;
+    padding-top: 5.6rem;
+    width: 31.5%;
+
+    display: grid;
+    grid-template-columns: 39% min-content;
+    justify-content: space-between;
+    align-content: space-between;
+
+    * {
+        grid-column: 1 / span 2;
+    }
+
+    @include respond-below('lg') {
+        width: 100%;
+        height: 27rem;
+        padding: 4rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+
+        &__description {
+            grid-column: 1 / span 1;
+            text-align: left;
+        }
+
+        &__rate {
+            grid-column: 2 / span 1;
+            text-align: right;
+        }
+
+        a {
+            grid-column: 1 / span 1;
+        }
+    }
+
+    @include respond-below('med-lg') {
+        height: 30rem;
+    }
+
+    @include respond-below('sm') {
+        height: 40rem;
+    }
+
+    @include respond-below('x-sm') {
+        height: 47rem;
+        padding: 4rem 2rem;
+    }
+
+    @include respond-below('sm-med') {
+        grid-template-columns: 45% min-content;
+    }
+
+    @include respond-below('sm') {
+        * {
+            grid-column: 1 / span 2;
+            text-align: center;
+        }
+
+        a {
+            grid-column: 1 / span 2;
+        }
+    }
+
+    &__description {
+        h2 {
+            margin-bottom: 1.8rem;
+        }
+
+        p {
+            opacity: 60%;
+        }
+    }
+
+    &--pro {
+        color: white;
+        background-color: $c-black;
+        height: 47rem;
+        padding-top: 8.8rem;
+        padding-bottom: 7.1rem;
+
+        @include respond-below('lg') {
+            height: 27rem;
+            padding: 4rem;
+        }
+
+        @include respond-below('med-lg') {
+            height: 30rem;
+            padding: 4rem;
+        }
+
+        @include respond-below('sm') {
+            height: 40rem;
+        }
+
+        @include respond-below('x-sm') {
+            height: 47rem;
+        }
+    }
+}
