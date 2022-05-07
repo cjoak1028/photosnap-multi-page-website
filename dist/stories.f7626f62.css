@@ -1274,6 +1274,16 @@ a {
   }
 }
 
+.pricing {
+  padding: 12rem 0;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .pricing {
+    padding: 6.4rem 0;
+  }
+}
+
 .plans {
   width: 77%;
   justify-content: space-between;
@@ -1537,4 +1547,4 @@ a {
   display: none !important;
 }
 
-/*# sourceMappingURL=pricing.f7626f62.css.map */
+/*# sourceMappingURL=stories.f7626f62.css.map */
