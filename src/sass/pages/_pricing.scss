@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 12rem auto;
+    // margin: 12rem auto;
+    margin: auto;
     width: 77%;
 
     @include respond-below('x-lg') {
@@ -11,7 +12,8 @@
 
     @include respond-below('lg') {
         flex-direction: column;
-        margin: 6.4rem auto;
+        // margin: 6.4rem auto;
+        margin: auto;
         width: 77%;
     }
 

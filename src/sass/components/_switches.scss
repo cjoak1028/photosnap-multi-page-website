@@ -1,0 +1,39 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 6.4rem;
+    height: 3.2rem;
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $c-grey;
+        border-radius: 16;
+
+        &:before {
+            position: absolute;
+            content: '';
+            height: 2.4rem;
+            width: 2.4rem;
+            background-color: $c-black;
+            border-radius: 50%;
+            left: .4rem;
+            bottom: .4rem;
+            transition: .4s;
+        }
+    }
+
+    input {
+        opacity: 0;
+        height: 0;
+        width: 0;
+
+        &:checked+.slider:before {
+            transform: translateX(3.2rem);
+        }
+    }
+}
