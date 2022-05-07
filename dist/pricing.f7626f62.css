@@ -888,6 +888,7 @@ a {
   cursor: pointer;
   background-color: #dfdfdf;
   border-radius: 16px;
+  transition: all .2s;
   position: absolute;
   inset: 0;
 }
@@ -898,7 +899,7 @@ a {
   width: 2.4rem;
   background-color: #000;
   border-radius: 50%;
-  transition: all .4s;
+  transition: all .2s;
   position: absolute;
   bottom: .4rem;
   left: .4rem;
@@ -910,7 +911,12 @@ a {
   width: 0;
 }
 
+.switch input:checked + .slider {
+  background-color: #000;
+}
+
 .switch input:checked + .slider:before {
+  background-color: #fff;
   transform: translateX(3.2rem);
 }
 
@@ -1268,6 +1274,16 @@ a {
   }
 }
 
+.pricing {
+  padding: 12rem 0;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .pricing {
+    padding: 6.4rem 0;
+  }
+}
+
 .plans {
   width: 77%;
   justify-content: space-between;
@@ -1431,6 +1447,31 @@ a {
   .plan--pro:before {
     width: .6rem;
     height: 100%;
+  }
+}
+
+.plan-switch {
+  width: 25.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto auto 4.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.plan-switch__label {
+  opacity: .5;
+  transition: all .2s;
+}
+
+.plan-switch .selected {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plan-switch {
+    margin-bottom: 4rem;
   }
 }
 

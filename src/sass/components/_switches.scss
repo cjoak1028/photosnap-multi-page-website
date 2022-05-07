@@ -13,6 +13,7 @@
         bottom: 0;
         background-color: $c-grey;
         border-radius: 16;
+        transition: .2s;
 
         &:before {
             position: absolute;
@@ -23,7 +24,7 @@
             border-radius: 50%;
             left: .4rem;
             bottom: .4rem;
-            transition: .4s;
+            transition: .2s;
         }
     }
 
@@ -32,8 +33,13 @@
         height: 0;
         width: 0;
 
+        &:checked+.slider {
+            background-color: $c-black;
+        }
+
         &:checked+.slider:before {
             transform: translateX(3.2rem);
+            background-color: $c-white;
         }
     }
 }

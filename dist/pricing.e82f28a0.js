@@ -516,6 +516,8 @@ function hmrAcceptRun(bundle, id) {
 },{}],"dV6cC":[function(require,module,exports) {
 const hamburgerButton = document.querySelector('.hamburger-btn');
 const header = document.querySelector('.header');
+const planSwitch = document.querySelector('.plan-switch input');
+const switchLabels = document.querySelectorAll('.plan-switch__label');
 // Check whether browser is Safari or not
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 const mediaQueryList = window.matchMedia("screen and (min-width: 47.8em)");
@@ -533,6 +535,11 @@ const toggleMenu = ()=>{
 };
 hamburgerButton.addEventListener('click', ()=>{
     toggleMenu();
+});
+planSwitch.addEventListener('change', ()=>{
+    switchLabels.forEach((label)=>{
+        label.classList.toggle('selected');
+    });
 });
 
 },{}]},["1B2dF","dV6cC"], "dV6cC", "parcelRequire6d81")

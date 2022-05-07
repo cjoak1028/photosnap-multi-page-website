@@ -878,27 +878,46 @@ a {
 }
 
 .switch {
-  cursor: pointer;
   width: 6.4rem;
   height: 3.2rem;
-  z-index: 1;
-  text-align: center;
-  background-color: #dfdfdf;
-  border-radius: 16px;
   display: inline-block;
   position: relative;
 }
 
-.switch:before {
+.switch .slider {
+  cursor: pointer;
+  background-color: #dfdfdf;
+  border-radius: 16px;
+  transition: all .2s;
+  position: absolute;
+  inset: 0;
+}
+
+.switch .slider:before {
   content: "";
-  width: 2.4rem;
   height: 2.4rem;
-  z-index: 10;
+  width: 2.4rem;
   background-color: #000;
   border-radius: 50%;
+  transition: all .2s;
   position: absolute;
-  top: .4rem;
+  bottom: .4rem;
   left: .4rem;
+}
+
+.switch input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.switch input:checked + .slider {
+  background-color: #000;
+}
+
+.switch input:checked + .slider:before {
+  background-color: #fff;
+  transform: translateX(3.2rem);
 }
 
 .footer {
@@ -1421,6 +1440,31 @@ a {
   }
 }
 
+.plan-switch {
+  width: 25.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto auto 4.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.plan-switch__label {
+  opacity: .5;
+  transition: all .2s;
+}
+
+.plan-switch .selected {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plan-switch {
+    margin-bottom: 4rem;
+  }
+}
+
 .stories-page .banner {
   background-color: #0000;
   background-image: none, url("moon-of-appalacia.980c7ae9.jpg");
@@ -1493,4 +1537,4 @@ a {
   display: none !important;
 }
 
-/*# sourceMappingURL=stories.f7626f62.css.map */
+/*# sourceMappingURL=pricing.f7626f62.css.map */

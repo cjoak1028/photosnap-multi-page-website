@@ -1,3 +1,11 @@
+.pricing {
+    padding: 12rem 0;
+
+    @include respond-below('lg') {
+        padding: 6.4rem 0;
+    }
+}
+
 .plans {
     display: flex;
     align-items: center;
@@ -142,5 +150,29 @@
                 height: 100%;
             }
         }
+    }
+}
+
+.plan-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25.5rem;
+    margin: auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 4.8rem;
+
+    &__label {
+        opacity: 50%;
+        transition: .2s;
+    }
+
+    .selected {
+        opacity: 100%;
+    }
+
+    @include respond-below('lg') {
+        margin-bottom: 4rem;
     }
 }
