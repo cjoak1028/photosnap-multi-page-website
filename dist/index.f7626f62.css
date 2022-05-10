@@ -34,6 +34,8 @@ ul, ol {
 a {
   cursor: pointer;
   text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
 }
 
 html {
@@ -80,6 +82,12 @@ a {
   line-height: 1.6rem;
 }
 
+table {
+  letter-spacing: .2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .flex {
   display: flex;
 }
@@ -108,6 +116,10 @@ a {
   .show-for-mobile {
     display: block;
   }
+}
+
+.text-center {
+  text-align: center;
 }
 
 .banner {
@@ -329,6 +341,7 @@ a {
 
 .btn {
   text-align: center;
+  height: 4rem;
   width: 100%;
   padding: 1.2rem 0;
   transition: color .2s, background-color .2s;
@@ -872,6 +885,49 @@ a {
   }
 }
 
+.switch {
+  width: 6.4rem;
+  height: 3.2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.switch .slider {
+  cursor: pointer;
+  background-color: #dfdfdf;
+  border-radius: 16px;
+  transition: all .2s;
+  position: absolute;
+  inset: 0;
+}
+
+.switch .slider:before {
+  content: "";
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: #000;
+  border-radius: 50%;
+  transition: all .2s;
+  position: absolute;
+  bottom: .4rem;
+  left: .4rem;
+}
+
+.switch input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.switch input:checked + .slider {
+  background-color: #000;
+}
+
+.switch input:checked + .slider:before {
+  background-color: #fff;
+  transform: translateX(3.2rem);
+}
+
 .footer {
   background-color: #000;
   padding: 6.4rem 0;
@@ -1223,6 +1279,310 @@ a {
 @media only screen and (max-width: 52.4em) {
   .about__description p {
     margin-bottom: 2.3rem;
+  }
+}
+
+.pricing {
+  margin-top: 12rem;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .pricing {
+    margin-top: 6.4rem;
+  }
+}
+
+.plans {
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  display: flex;
+}
+
+@media only screen and (max-width: 81.3em) {
+  .plans {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .plans {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plans {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.plan {
+  text-align: center;
+  height: 40.7rem;
+  width: 31.5%;
+  background-color: #f5f5f5;
+  grid-template-columns: 39% min-content;
+  place-content: space-between;
+  padding: 5.6rem 4rem 4rem;
+  display: grid;
+}
+
+.plan * {
+  grid-column: 1 / span 2;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plan {
+    width: 100%;
+    height: 27rem;
+    padding: 4rem;
+  }
+
+  .plan:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .plan__description {
+    text-align: left;
+    grid-column: 1 / span 1;
+  }
+
+  .plan__rate {
+    text-align: right;
+    grid-column: 2 / span 1;
+  }
+
+  .plan a {
+    grid-column: 1 / span 1;
+  }
+}
+
+@media only screen and (max-width: 59.7em) {
+  .plan {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .plan {
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 23.4em) {
+  .plan {
+    height: 47rem;
+    padding: 4rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 45.2em) {
+  .plan {
+    grid-template-columns: 45% min-content;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .plan * {
+    text-align: center;
+    grid-column: 1 / span 2;
+  }
+
+  .plan a {
+    grid-column: 1 / span 2;
+  }
+}
+
+.plan__description h2 {
+  margin-bottom: 1.8rem;
+}
+
+.plan__description p {
+  opacity: .6;
+}
+
+.plan--pro {
+  color: #fff;
+  height: 47rem;
+  background-color: #000;
+  padding-top: 8.8rem;
+  padding-bottom: 7.1rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plan--pro {
+    height: 27rem;
+    padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 59.7em) {
+  .plan--pro {
+    height: 30rem;
+    padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .plan--pro {
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 23.4em) {
+  .plan--pro {
+    height: 47rem;
+  }
+}
+
+.plan--pro:before {
+  content: "";
+  width: 100%;
+  height: .6rem;
+  background-image: linear-gradient(192deg, #5a77ff, #bc7198, #ffc593);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plan--pro:before {
+    width: .6rem;
+    height: 100%;
+  }
+}
+
+.plan-switch {
+  width: 25.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto auto 4.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.plan-switch__label {
+  opacity: .5;
+  transition: all .2s;
+}
+
+.plan-switch .selected {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .plan-switch {
+    margin-bottom: 4rem;
+  }
+}
+
+.comparison {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 16rem 0;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .comparison {
+    margin: 11.2rem 0;
+  }
+}
+
+@media only screen and (max-width: 37.9em) {
+  .comparison {
+    margin: 6.4rem 0;
+  }
+}
+
+.comparison h1 {
+  margin-bottom: 5.6rem;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .comparison h1 {
+    display: none;
+  }
+}
+
+.compare-table {
+  letter-spacing: .2rem;
+  width: 90%;
+  border-collapse: collapse;
+  text-align: left;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.compare-table:not(.for-mobile) {
+  max-width: 74rem;
+}
+
+.compare-table:not(.for-mobile) tr {
+  height: 6.3rem;
+  border-bottom: 1px solid #000;
+}
+
+.compare-table:not(.for-mobile) tr:not(:first-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.compare-table:not(.for-mobile) td:first-child, .compare-table:not(.for-mobile) th:first-child {
+  width: 40%;
+}
+
+.compare-table:not(.for-mobile) td:not(:first-child), .compare-table:not(.for-mobile) th:not(:first-child) {
+  text-align: center;
+  width: 20%;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .compare-table:not(.for-mobile) {
+    display: none;
+  }
+}
+
+.compare-table.for-mobile {
+  width: 85%;
+}
+
+.compare-table.for-mobile .main-title-row {
+  vertical-align: top;
+  height: 3.9rem;
+  border-bottom: 1px solid #000;
+}
+
+.compare-table.for-mobile .feature-title-row {
+  vertical-align: bottom;
+  height: 5rem;
+  height: 3.9rem;
+}
+
+.compare-table.for-mobile .plan-titles-row {
+  vertical-align: bottom;
+  opacity: .5;
+  letter-spacing: .167rem;
+  height: 2.9rem;
+  font-size: 1rem;
+}
+
+.compare-table.for-mobile .data-row {
+  vertical-align: top;
+  height: 3.6rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.compare-table.for-mobile th {
+  width: 33.33%;
+}
+
+@media only screen and (min-width: 37.9em) {
+  .compare-table.for-mobile {
+    display: none;
   }
 }
 

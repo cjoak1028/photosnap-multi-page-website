@@ -34,6 +34,8 @@ ul, ol {
 a {
   cursor: pointer;
   text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
 }
 
 html {
@@ -1304,6 +1306,12 @@ table {
   }
 }
 
+@media only screen and (max-width: 37.9em) {
+  .plans {
+    width: 85%;
+  }
+}
+
 @media only screen and (max-width: 66.9em) {
   .plans {
     flex-direction: column;
@@ -1485,6 +1493,12 @@ table {
   }
 }
 
+@media only screen and (max-width: 37.9em) {
+  .comparison {
+    margin: 6.4rem 0;
+  }
+}
+
 .comparison h1 {
   margin-bottom: 5.6rem;
 }
@@ -1499,6 +1513,7 @@ table {
   letter-spacing: .2rem;
   width: 90%;
   border-collapse: collapse;
+  text-align: left;
   margin: auto;
   font-size: 1.2rem;
 }
@@ -1532,21 +1547,43 @@ table {
 }
 
 .compare-table.for-mobile {
-  text-align: left;
+  width: 85%;
 }
 
-.compare-table.for-mobile .feature-title {
-  width: 100%;
+.compare-table.for-mobile .main-title-row {
+  vertical-align: top;
+  height: 3.9rem;
+  border-bottom: 1px solid #000;
 }
 
-.compare-table.for-mobile .plan-titles {
+.compare-table.for-mobile .feature-title-row {
+  vertical-align: bottom;
+  height: 5rem;
+  height: 3.9rem;
+}
+
+.compare-table.for-mobile .plan-titles-row {
+  vertical-align: bottom;
   opacity: .5;
   letter-spacing: .167rem;
+  height: 2.9rem;
   font-size: 1rem;
 }
 
-.compare-table.for-mobile .plan-title {
+.compare-table.for-mobile .data-row {
+  vertical-align: top;
+  height: 3.6rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.compare-table.for-mobile th {
   width: 33.33%;
+}
+
+@media only screen and (min-width: 37.9em) {
+  .compare-table.for-mobile {
+    display: none;
+  }
 }
 
 .stories-page .banner {

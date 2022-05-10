@@ -4,7 +4,7 @@
   "description": "This is a solution to the [Photosnap Website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW).",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./pages/pricing.html",
+    "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "author": "David Kim",
