@@ -926,34 +926,6 @@ table {
   transform: translateX(3.2rem);
 }
 
-table {
-  width: 90%;
-  max-width: 74rem;
-  border-collapse: collapse;
-}
-
-tr {
-  height: 6.3rem;
-  border-bottom: 1px solid #000;
-}
-
-tr:not(:first-child) {
-  border-bottom: 1px solid #dfdfdf;
-}
-
-td, th {
-  text-align: left;
-  width: 20%;
-}
-
-td:not(:first-child), th:not(:first-child) {
-  text-align: center;
-}
-
-td:first-child, th:first-child {
-  width: 40%;
-}
-
 .footer {
   background-color: #000;
   padding: 6.4rem 0;
@@ -1332,6 +1304,12 @@ td:first-child, th:first-child {
   }
 }
 
+@media only screen and (max-width: 37.9em) {
+  .plans {
+    width: 85%;
+  }
+}
+
 @media only screen and (max-width: 66.9em) {
   .plans {
     flex-direction: column;
@@ -1513,14 +1491,97 @@ td:first-child, th:first-child {
   }
 }
 
+@media only screen and (max-width: 37.9em) {
+  .comparison {
+    margin: 6.4rem 0;
+  }
+}
+
 .comparison h1 {
   margin-bottom: 5.6rem;
 }
 
+@media only screen and (max-width: 37.9em) {
+  .comparison h1 {
+    display: none;
+  }
+}
+
 .compare-table {
   letter-spacing: .2rem;
+  width: 90%;
+  border-collapse: collapse;
+  text-align: left;
   margin: auto;
   font-size: 1.2rem;
+}
+
+.compare-table:not(.for-mobile) {
+  max-width: 74rem;
+}
+
+.compare-table:not(.for-mobile) tr {
+  height: 6.3rem;
+  border-bottom: 1px solid #000;
+}
+
+.compare-table:not(.for-mobile) tr:not(:first-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.compare-table:not(.for-mobile) td:first-child, .compare-table:not(.for-mobile) th:first-child {
+  width: 40%;
+}
+
+.compare-table:not(.for-mobile) td:not(:first-child), .compare-table:not(.for-mobile) th:not(:first-child) {
+  text-align: center;
+  width: 20%;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .compare-table:not(.for-mobile) {
+    display: none;
+  }
+}
+
+.compare-table.for-mobile {
+  width: 85%;
+}
+
+.compare-table.for-mobile .main-title-row {
+  vertical-align: top;
+  height: 3.9rem;
+  border-bottom: 1px solid #000;
+}
+
+.compare-table.for-mobile .feature-title-row {
+  vertical-align: bottom;
+  height: 5rem;
+  height: 3.9rem;
+}
+
+.compare-table.for-mobile .plan-titles-row {
+  vertical-align: bottom;
+  opacity: .5;
+  letter-spacing: .167rem;
+  height: 2.9rem;
+  font-size: 1rem;
+}
+
+.compare-table.for-mobile .data-row {
+  vertical-align: top;
+  height: 3.6rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.compare-table.for-mobile th {
+  width: 33.33%;
+}
+
+@media only screen and (min-width: 37.9em) {
+  .compare-table.for-mobile {
+    display: none;
+  }
 }
 
 .stories-page .banner {

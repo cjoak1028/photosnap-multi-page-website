@@ -926,34 +926,6 @@ table {
   transform: translateX(3.2rem);
 }
 
-table {
-  width: 90%;
-  max-width: 74rem;
-  border-collapse: collapse;
-}
-
-tr {
-  height: 6.3rem;
-  border-bottom: 1px solid #000;
-}
-
-tr:not(:first-child) {
-  border-bottom: 1px solid #dfdfdf;
-}
-
-td, th {
-  text-align: left;
-  width: 20%;
-}
-
-td:not(:first-child), th:not(:first-child) {
-  text-align: center;
-}
-
-td:first-child, th:first-child {
-  width: 40%;
-}
-
 .footer {
   background-color: #000;
   padding: 6.4rem 0;
@@ -1517,10 +1489,64 @@ td:first-child, th:first-child {
   margin-bottom: 5.6rem;
 }
 
+@media only screen and (max-width: 37.9em) {
+  .comparison h1 {
+    display: none;
+  }
+}
+
 .compare-table {
   letter-spacing: .2rem;
+  width: 90%;
+  border-collapse: collapse;
   margin: auto;
   font-size: 1.2rem;
+}
+
+.compare-table:not(.for-mobile) {
+  max-width: 74rem;
+}
+
+.compare-table:not(.for-mobile) tr {
+  height: 6.3rem;
+  border-bottom: 1px solid #000;
+}
+
+.compare-table:not(.for-mobile) tr:not(:first-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.compare-table:not(.for-mobile) td:first-child, .compare-table:not(.for-mobile) th:first-child {
+  width: 40%;
+}
+
+.compare-table:not(.for-mobile) td:not(:first-child), .compare-table:not(.for-mobile) th:not(:first-child) {
+  text-align: center;
+  width: 20%;
+}
+
+@media only screen and (max-width: 37.9em) {
+  .compare-table:not(.for-mobile) {
+    display: none;
+  }
+}
+
+.compare-table.for-mobile {
+  text-align: left;
+}
+
+.compare-table.for-mobile .feature-title {
+  width: 100%;
+}
+
+.compare-table.for-mobile .plan-titles {
+  opacity: .5;
+  letter-spacing: .167rem;
+  font-size: 1rem;
+}
+
+.compare-table.for-mobile .plan-title {
+  width: 33.33%;
 }
 
 .stories-page .banner {

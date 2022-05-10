@@ -1,3 +1,4 @@
+// PRICING SECTION STYLES
 .pricing {
     margin-top: 12rem;
 
@@ -15,6 +16,10 @@
 
     @include respond-below('x-lg') {
         width: 90%;
+    }
+
+    @include respond-below('sm') {
+        width: 85%;
     }
 
     @include respond-below('lg') {
@@ -169,6 +174,7 @@
     }
 }
 
+// COMPARISON SECTION STYLES
 .comparison {
     margin: 16rem 0;
     text-align: center;
@@ -178,8 +184,16 @@
         margin: 11.2rem 0;
     }
 
+    @include respond-below('sm') {
+        margin: 6.4rem 0;
+    }
+
     h1 {
         margin-bottom: 5.6rem;
+
+        @include respond-below('sm') {
+            display: none;
+        }
     }
 }
 
@@ -187,4 +201,74 @@
     font-size: 1.2rem;
     letter-spacing: .2rem;
     margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: left;
+
+    &:not(.for-mobile) {
+        max-width: 74rem;
+
+        tr {
+            height: 6.3rem;
+            border-bottom: 1px solid $c-black;
+
+            &:not(:first-child) {
+                border-bottom: 1px solid $c-grey;
+            }
+        }
+
+        td,
+        th {
+            &:first-child {
+                width: 40%;
+            }
+
+            &:not(:first-child) {
+                text-align: center;
+                width: 20%;
+            }
+        }
+
+        @include respond-below('sm') {
+            display: none;
+        }
+    }
+
+    &.for-mobile {
+        width: 85%;
+
+        .main-title-row {
+            vertical-align: top;
+            border-bottom: 1px solid $c-black;
+            height: 3.9rem;
+        }
+
+        .feature-title-row {
+            vertical-align: bottom;
+            height: 5rem;
+            height: 3.9rem;
+        }
+
+        .plan-titles-row {
+            vertical-align: bottom;
+            opacity: 50%;
+            font-size: 1rem;
+            letter-spacing: 0.167rem;
+            height: 2.9rem;
+        }
+
+        .data-row {
+            vertical-align: top;
+            height: 3.6rem;
+            border-bottom: 1px solid $c-grey;
+        }
+
+        th {
+            width: 33.33%;
+        }
+
+        @include respond-above('sm') {
+            display: none;
+        }
+    }
 }
