@@ -21,10 +21,6 @@
         flex-direction: column;
         margin: auto;
     }
-
-    @include respond-below('med-lg') {
-        flex-direction: column;
-    }
 }
 
 .plan {
@@ -173,8 +169,22 @@
     }
 }
 
+.comparison {
+    margin: 16rem 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include respond-below('lg') {
+        margin: 11.2rem 0;
+    }
+
+    h1 {
+        margin-bottom: 5.6rem;
+    }
+}
+
 .compare-table {
     font-size: 1.2rem;
     letter-spacing: .2rem;
-    text-transform: uppercase;
+    margin: auto;
 }

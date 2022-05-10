@@ -927,7 +927,8 @@ table {
 }
 
 table {
-  width: 73.1rem;
+  width: 90%;
+  max-width: 74rem;
   border-collapse: collapse;
 }
 
@@ -942,10 +943,15 @@ tr:not(:first-child) {
 
 td, th {
   text-align: left;
+  width: 20%;
 }
 
 td:not(:first-child), th:not(:first-child) {
   text-align: center;
+}
+
+td:first-child, th:first-child {
+  width: 40%;
 }
 
 .footer {
@@ -1333,12 +1339,6 @@ td:not(:first-child), th:not(:first-child) {
   }
 }
 
-@media only screen and (max-width: 59.7em) {
-  .plans {
-    flex-direction: column;
-  }
-}
-
 .plan {
   text-align: center;
   height: 40.7rem;
@@ -1501,9 +1501,25 @@ td:not(:first-child), th:not(:first-child) {
   }
 }
 
+.comparison {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 16rem 0;
+}
+
+@media only screen and (max-width: 66.9em) {
+  .comparison {
+    margin: 11.2rem 0;
+  }
+}
+
+.comparison h1 {
+  margin-bottom: 5.6rem;
+}
+
 .compare-table {
   letter-spacing: .2rem;
-  text-transform: uppercase;
+  margin: auto;
   font-size: 1.2rem;
 }
 

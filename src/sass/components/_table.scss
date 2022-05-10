@@ -1,5 +1,6 @@
 table {
-    width: 73.1rem;
+    width: 90%;
+    max-width: 74rem;
     border-collapse: collapse;
 }
 
@@ -19,4 +20,10 @@ th {
     &:not(:first-child) {
         text-align: center;
     }
+
+    &:first-child {
+        width: 40%;
+    }
+
+    width: 20%;
 }
