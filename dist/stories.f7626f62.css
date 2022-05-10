@@ -80,6 +80,12 @@ a {
   line-height: 1.6rem;
 }
 
+table {
+  letter-spacing: .2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .flex {
   display: flex;
 }
@@ -920,6 +926,28 @@ a {
   transform: translateX(3.2rem);
 }
 
+table {
+  width: 73.1rem;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 6.3rem;
+  border-bottom: 1px solid #000;
+}
+
+tr:not(:first-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+td, th {
+  text-align: left;
+}
+
+td:not(:first-child), th:not(:first-child) {
+  text-align: center;
+}
+
 .footer {
   background-color: #000;
   padding: 6.4rem 0;
@@ -1275,17 +1303,17 @@ a {
 }
 
 .pricing {
-  padding: 12rem 0;
+  margin-top: 12rem;
 }
 
 @media only screen and (max-width: 66.9em) {
   .pricing {
-    padding: 6.4rem 0;
+    margin-top: 6.4rem;
   }
 }
 
 .plans {
-  width: 77%;
+  width: 80%;
   justify-content: space-between;
   align-items: center;
   margin: auto;
@@ -1300,7 +1328,6 @@ a {
 
 @media only screen and (max-width: 66.9em) {
   .plans {
-    width: 77%;
     flex-direction: column;
     margin: auto;
   }
@@ -1308,7 +1335,6 @@ a {
 
 @media only screen and (max-width: 59.7em) {
   .plans {
-    width: 90%;
     flex-direction: column;
   }
 }
@@ -1473,6 +1499,12 @@ a {
   .plan-switch {
     margin-bottom: 4rem;
   }
+}
+
+.compare-table {
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 .stories-page .banner {

@@ -1,0 +1,22 @@
+table {
+    width: 73.1rem;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 6.3rem;
+    border-bottom: 1px solid $c-black;
+
+    &:not(:first-child) {
+        border-bottom: 1px solid $c-grey;
+    }
+}
+
+td,
+th {
+    text-align: left;
+
+    &:not(:first-child) {
+        text-align: center;
+    }
+}

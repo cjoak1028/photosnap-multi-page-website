@@ -1,8 +1,8 @@
 .pricing {
-    padding: 12rem 0;
+    margin-top: 12rem;
 
     @include respond-below('lg') {
-        padding: 6.4rem 0;
+        margin-top: 6.4rem;
     }
 }
 
@@ -10,9 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // margin: 12rem auto;
     margin: auto;
-    width: 77%;
+    width: 80%;
 
     @include respond-below('x-lg') {
         width: 90%;
@@ -20,14 +19,11 @@
 
     @include respond-below('lg') {
         flex-direction: column;
-        // margin: 6.4rem auto;
         margin: auto;
-        width: 77%;
     }
 
     @include respond-below('med-lg') {
         flex-direction: column;
-        width: 90%;
     }
 }
 
@@ -175,4 +171,10 @@
     @include respond-below('lg') {
         margin-bottom: 4rem;
     }
+}
+
+.compare-table {
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
 }
