@@ -23,9 +23,12 @@
     }
 
     a {
-        transition: color 0.2s ease;
-
         &:hover {
+            transition: 0.2s ease;
+            color: $c-grey;
+        }
+
+        &.selected {
             color: $c-grey;
         }
     }
@@ -69,9 +72,12 @@
     }
 
     a {
-        transition: opacity 0.2s ease;
-
         &:hover {
+            transition: 0.2s ease;
+            opacity: 30%;
+        }
+
+        &.selected {
             opacity: 30%;
         }
     }
