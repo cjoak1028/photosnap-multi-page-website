@@ -1021,34 +1021,25 @@ table {
 .header {
   height: 7.2rem;
   background-color: #fff;
-  padding: 1.6rem 5.4rem;
-  transition: height .3s ease-out .1s;
+  padding: 1.6rem 0;
+  transition: height .3s ease-out;
   overflow: hidden;
 }
 
-@media only screen and (min-width: 81.3em) {
-  .header {
-    padding: 1.6rem 11.2rem;
-  }
-}
-
 @media only screen and (max-width: 45.2em) {
-  .header {
-    padding: 0 2.4rem;
-  }
-
   .header.menu-drop {
     height: 33.5rem;
   }
 
   .header--mobile {
-    height: 7.2rem;
-    width: 100%;
+    height: 4rem;
+    width: 90%;
     justify-content: space-between;
   }
 }
 
 .header__content {
+  width: 89%;
   margin: auto;
 }
 
