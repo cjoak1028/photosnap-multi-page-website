@@ -961,6 +961,12 @@ table {
   display: flex;
 }
 
+@media only screen and (max-width: 52.4em) {
+  .footer__content .logos-container {
+    margin-bottom: 3rem;
+  }
+}
+
 .footer__content .logos-container .logo-container {
   width: 2rem;
   height: 2rem;
@@ -1051,7 +1057,7 @@ table {
 
   .header--mobile {
     height: 4rem;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
   }
 }

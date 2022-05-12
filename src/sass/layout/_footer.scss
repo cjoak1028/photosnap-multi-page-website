@@ -26,6 +26,10 @@
             width: 15.3rem;
             height: 2rem;
 
+            @include respond-below('med') {
+                margin-bottom: 3rem;
+            }
+
             .logo-container {
                 width: 2rem;
                 height: 2rem;
