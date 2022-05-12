@@ -1,6 +1,9 @@
 .banner {
     display: flex;
-    // max-height: 60rem;
+
+    @include respond-above('sm-med') {
+        height: 65rem;
+    }
 
     @include respond-below('sm-med') {
         flex-direction: column-reverse;
