@@ -956,13 +956,31 @@ table {
 
 .footer__content .logos-container {
   width: 15.3rem;
+  height: 2rem;
   justify-content: space-between;
   display: flex;
 }
 
-.footer__content .logos-container img {
+.footer__content .logos-container .logo-container {
   width: 2rem;
   height: 2rem;
+  position: relative;
+}
+
+.footer__content .logos-container .logo-container a {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer__content .logos-container .logo-container a:first-of-type {
+  z-index: 1;
+}
+
+.footer__content .logos-container .logo-container a:first-of-type:hover {
+  opacity: 0;
+  transition: all .2s;
 }
 
 .footer__item--1 {

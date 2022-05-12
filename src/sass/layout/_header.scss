@@ -6,8 +6,6 @@
     transition: height .3s ease-out;
 
     @include respond-below('sm-med') {
-        // padding: 0 2.4rem;
-
         &.menu-drop {
             height: 33.5rem;
         }
