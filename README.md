@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-The sole purpose of this project was for me to get more comfortable in using various existing tools to optimize layout and responsiveness. Through this, I've gained more awareness in which layout tool (Flexbox or CSS Grid) I had to use in different cases.
+The sole purpose of this project was for me to get more comfortable in using various existing tools to optimize layout and responsiveness. Through this, I've gained more awareness in which layout tool (Flexbox or CSS Grid) I had to use in certain circumstances.
 
 ### Useful resources
 
