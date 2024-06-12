@@ -1,11 +1,10 @@
-# Frontend Mentor - Photosnap Multipage Website
+# Photosnap Multipage Website
 
 A marketing website for a photo-sharing application.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -14,13 +13,6 @@ A marketing website for a photo-sharing application.
   - [Useful resources](#useful-resources)
 
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements throughout the site
 
 ### Screenshot
 
@@ -43,7 +35,7 @@ Users should be able to:
 
 ### What I learned
 
-The purpose of this project was for me to get more comfortable using various tools to optimize layout and responsiveness. Through this, I've gained more awareness in which layout tool (Flexbox or CSS Grid) I had to use in which situation.
+The purpose of this project was for me to get more comfortable using various tools to optimize layout and responsiveness. Through this, I've gained more awareness of which layout tool (Flexbox or CSS Grid) I had to use in which situation.
 
 ### Useful resources
 
